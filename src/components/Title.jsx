@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Title = () => {
+const Title = (props) => {
 
     return (
         <>
-          <h1>J'AIME SALAMECHE</h1>
+          <h1>
+            J'AIME <span  style ={props.titleStyle}>{props.value}</span>
+          </h1>
         </>
     )
 }
